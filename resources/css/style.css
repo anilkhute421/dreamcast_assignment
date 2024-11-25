@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    width: 90%;
+    /* max-width: 1400px;
+    margin: 20px auto; */
+}
+
+.form-container {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-container form input,
+.form-container form textarea,
+.form-container form select,
+.form-container form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-container form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container form button:hover {
+    background-color: #45a049;
+}
+
+.form-container .error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.list-container {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list-container table th,
+.list-container table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.list-container table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.list-container table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.list-container table img {
+    display: block;
+    max-width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container, .list-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
